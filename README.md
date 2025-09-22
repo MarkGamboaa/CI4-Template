@@ -16,17 +16,17 @@ cd C:\xampp\htdocs
 
 ## 📥 Step 2: Clone the Repository
 
+This will create a new folder called `CI4-Template`.
+
 ```cmd
 git clone https://github.com/MarkGamboaa/CI4-Template.git
 ```
-
-This will create a new folder called `CI4-Template`.
 
 ---
 
 ## ✏ Step 3: Rename the Folder
 
-Change the folder name from **CI4-Template** to **your own project name**.
+Change the folder name CI4-Template to your own project name (replace YourProjectName):
 
 ```cmd
 ren CI4-Template YourProjectName
@@ -39,6 +39,8 @@ ren CI4-Template CI4-App
 
 ## 📂 Step 4: Move Into Your Project Folder
 
+Navigate into your newly renamed folder:
+
 ```cmd
 cd C:\xampp\htdocs\YourProjectName
 ```
@@ -50,8 +52,8 @@ cd C:\xampp\htdocs\CI4-App
 
 ## 💻 Step 5: Open in VS Code
 
+Open the project in VS Code:
+
 ```cmd
 code .
 ```
-
-This will launch your project in Visual Studio Code.
