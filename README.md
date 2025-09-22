@@ -26,10 +26,10 @@ This will create a new folder called `CI4-Template`.
 
 ## ✏ Step 3: Rename the Folder
 
-Change `CI4-Template` to your preferred project folder name:
+Change the folder name from **CI4-Template** to **your own project name**.
 
 ```cmd
-ren CI4-Template <newFolderName>
+ren CI4-Template YourProjectName
 ```
 
 ➡ Example:  
@@ -37,12 +37,17 @@ ren CI4-Template <newFolderName>
 ren CI4-Template CI4-App
 ```
 
+After renaming, you will now have:  
+```
+C:\xampp\htdocs\YourProjectName
+```
+
 ---
 
 ## 📂 Step 4: Move Into Your Project Folder
 
 ```cmd
-cd C:\xampp\htdocs\<newFolderName>
+cd C:\xampp\htdocs\YourProjectName
 ```
 
 ➡ Example:  
@@ -67,7 +72,7 @@ This will launch your project in Visual Studio Code.
 - Copy `.env.example` to `.env` and configure your database + baseURL.  
 - Make sure the `writable/` directory has proper permissions.  
 - Start Apache + MySQL from XAMPP and you’re ready to go.  
-- Visit your project at [http://localhost/<newFolderName>/public](http://localhost/<newFolderName>/public)
+- Visit your project at [http://localhost/YourProjectName/public](http://localhost/YourProjectName/public)
 
 ---
 
