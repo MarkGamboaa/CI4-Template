@@ -1,60 +1,76 @@
-# CodeIgniter 4 Framework
+# 🚀 CI4-Template Setup Guide
 
-## What is CodeIgniter?
+This guide will walk you through setting up the **CodeIgniter 4 Template** inside your XAMPP `htdocs` directory.
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](https://codeigniter.com).
+---
 
-This repository holds the distributable version of the framework.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
+## 📦 Step 1: Go to XAMPP htdocs directory
 
-More information about the plans for version 4 can be found in [CodeIgniter 4](https://forum.codeigniter.com/forumdisplay.php?fid=28) on the forums.
+Open **CMD** and run:
 
-You can read the [user guide](https://codeigniter.com/user_guide/)
-corresponding to the latest version of the framework.
+```cmd
+cd C:\xampp\htdocs
+```
 
-## Important Change with index.php
+---
 
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
+## 📥 Step 2: Clone the Repository
 
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
+```cmd
+git clone https://github.com/MarkGamboaa/CI4-Template.git
+```
 
-**Please** read the user guide for a better explanation of how CI4 works!
+This will create a new folder called `CI4-Template`.
 
-## Repository Management
+---
 
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
+## ✏ Step 3: Rename the Folder
 
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
+Change `CI4-Template` to your preferred project folder name:
 
-## Contributing
+```cmd
+ren CI4-Template <newFolderName>
+```
 
-We welcome contributions from the community.
+➡ Example:  
+```cmd
+ren CI4-Template CI4-App
+```
 
-Please read the [*Contributing to CodeIgniter*](https://github.com/codeigniter4/CodeIgniter4/blob/develop/CONTRIBUTING.md) section in the development repository.
+---
 
-## Server Requirements
+## 📂 Step 4: Move Into Your Project Folder
 
-PHP version 8.1 or higher is required, with the following extensions installed:
+```cmd
+cd C:\xampp\htdocs\<newFolderName>
+```
 
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
+➡ Example:  
+```cmd
+cd C:\xampp\htdocs\CI4-App
+```
 
-> [!WARNING]
-> - The end of life date for PHP 7.4 was November 28, 2022.
-> - The end of life date for PHP 8.0 was November 26, 2023.
-> - If you are still using PHP 7.4 or 8.0, you should upgrade immediately.
-> - The end of life date for PHP 8.1 will be December 31, 2025.
+---
 
-Additionally, make sure that the following extensions are enabled in your PHP:
+## 💻 Step 5: Open in VS Code
 
-- json (enabled by default - don't turn it off)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
+```cmd
+code .
+```
+
+This will launch your project in Visual Studio Code.
+
+---
+
+## 🎯 Next Steps
+
+- Copy `.env.example` to `.env` and configure your database + baseURL.  
+- Make sure the `writable/` directory has proper permissions.  
+- Start Apache + MySQL from XAMPP and you’re ready to go.  
+- Visit your project at [http://localhost/<newFolderName>/public](http://localhost/<newFolderName>/public)
+
+---
+
+## 📄 License
+
+MIT License — feel free to use and modify.
