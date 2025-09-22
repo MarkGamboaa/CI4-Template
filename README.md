@@ -65,3 +65,8 @@ Just replace YourProjectName with whatever you want to name your project.
 ```cmd
 cd C:\xampp\htdocs && git clone https://github.com/MarkGamboaa/CI4-Template.git && ren CI4-Template YourProjectName && cd YourProjectName && code .
 ```
+Dont forget to edit $baseURL
+
+```cmd
+public string $baseURL = 'http://localhost/CI4-Template/';
+```
