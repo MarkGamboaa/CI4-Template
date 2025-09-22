@@ -33,14 +33,7 @@ ren CI4-Template YourProjectName
 ```
 
 ➡ Example:  
-```cmd
 ren CI4-Template CI4-App
-```
-
-After renaming, you will now have:  
-```
-C:\xampp\htdocs\YourProjectName
-```
 
 ---
 
@@ -51,9 +44,7 @@ cd C:\xampp\htdocs\YourProjectName
 ```
 
 ➡ Example:  
-```cmd
 cd C:\xampp\htdocs\CI4-App
-```
 
 ---
 
@@ -64,18 +55,3 @@ code .
 ```
 
 This will launch your project in Visual Studio Code.
-
----
-
-## 🎯 Next Steps
-
-- Copy `.env.example` to `.env` and configure your database + baseURL.  
-- Make sure the `writable/` directory has proper permissions.  
-- Start Apache + MySQL from XAMPP and you’re ready to go.  
-- Visit your project at [http://localhost/YourProjectName/public](http://localhost/YourProjectName/public)
-
----
-
-## 📄 License
-
-MIT License — feel free to use and modify.
